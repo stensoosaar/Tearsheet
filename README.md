@@ -1,10 +1,16 @@
 # Tearsheet
 
-This is a simple Swift / DuckDB based library for analyzing and visualizing portfolio performance by calculating:
-- cash weighted portfolio return using modified Dietz formula and compares it with benchmark
-- drawdown 
-- grouped returns
-- sharpe, sortino, componded annual growth rate (cagr)
-- distribution of daily returns 
+This is a simple Swift/DuckDB-based library for analyzing and visualizing portfolio performance by calculating:
 
-At this moment it's quick hack stage, seems to work with xcode 16 / Sequoia 15  but needs further development.
+- Cash-weighted portfolio return using the modified Dietz formula, compared with a selected benchmark
+- Drawdown
+- Grouped returns
+- Sharpe and Sortino ratios, Compound Annual Growth Rate (CAGR)
+- Distribution of daily returns
+
+Currently, you can analyze a CSV file or a PostgreSQL database table. The following columns are expected:
+- date: The date in the format yyyy-mm-dd
+- cash_flow: Net cash flow from deposits and withdrawals in the account's base currency
+- end_balance: The ending balance of your portfolio/account (in the account's base currency)
+
+At the moment, it's in the quick hack stage. It seems to work with Xcode 16 / Sequoia 15 but definitely requires further development.
