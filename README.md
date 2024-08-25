@@ -1,7 +1,2 @@
-//
-//  README.md
-//  Tearsheet
-//
-//  Created by Sten Soosaar on 25.08.2024.
-//
-
+# Tearsheet
+This is a simple Swift / DuckDB based library for analyzing and visualizing portfolio performance

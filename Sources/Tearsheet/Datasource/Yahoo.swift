@@ -1,6 +1,4 @@
 import Foundation
-import DuckDB
-
 
 
 public enum YahooFinance: String{
